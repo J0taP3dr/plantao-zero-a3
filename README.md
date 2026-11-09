@@ -29,7 +29,7 @@ O jogo processa eventos de teclado e mouse (input), atualiza a decisao e a pontu
 A proposta trabalha o combate a desinformacao, incentivando o jogador a observar autoria, data, contexto e confirmacao antes de repassar conteudos.
 
 ## Integrantes
-Preencher com os nomes dos quatro integrantes.
+Preencher.
 
 ## Uso de IA
-Registrar de forma transparente as ferramentas de IA utilizadas e as contribuicoes de cada integrante, conforme as orientacoes do professor.
+Preencher.
