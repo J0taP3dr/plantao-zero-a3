@@ -29,7 +29,17 @@ O jogo processa eventos de teclado e mouse (input), atualiza a decisao e a pontu
 A proposta trabalha o combate a desinformacao, incentivando o jogador a observar autoria, data, contexto e confirmacao antes de repassar conteudos.
 
 ## Integrantes
-Preencher.
+Charlen Rogrigues da Silva
+RA: 326137850
+
+Cristiano Coelho Fonseca Junker
+RA: 32617935
+
+Gustavo Barboza Lage 
+RA: 326128126
+
+João Pedro Cassiano dos Santos
+RA: 324127678
 
 ## Uso de IA
 Preencher.
