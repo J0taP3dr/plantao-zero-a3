@@ -1,45 +1,60 @@
-# Plantao Zero — Central de Verificacao
+# Plantão Zero — Central de Verificação
 
-Jogo educativo em Python + PyGame sobre combate a desinformacao.
+Jogo educativo em **Python + Pygame** sobre combate à desinformação. O jogador atua em uma central comunitária de verificação e precisa decidir como lidar com mensagens recebidas.
 
-## Conceito
-O jogador assume o papel de uma pessoa em uma redacao comunitaria. Em cada rodada recebe uma informacao ficticia, analisa pistas sobre origem, contexto e evidencias e escolhe uma acao:
-- **Compartilhar** quando a informacao esta suficientemente confirmada;
-- **Investigar** quando faltam elementos para concluir;
-- **Nao compartilhar** quando ha sinais claros de manipulacao, golpe ou contexto enganoso.
+## Objetivo social
 
-Os casos sao ficticios e foram criados exclusivamente para a atividade.
+Incentivar o pensamento crítico e a responsabilidade digital: verificar autoria, data, contexto e evidências antes de compartilhar informações. Os oito casos são **fictícios**, criados para a atividade acadêmica.
+
+## Como jogar
+
+Em cada caso, leia a mensagem, observe a origem e as três pistas e escolha:
+
+- **Compartilhar**: há confirmação suficiente e a informação pode ser divulgada com contexto.
+- **Investigar**: faltam evidências para confirmar a informação.
+- **Não compartilhar**: há sinais de golpe, manipulação ou contexto enganoso.
+
+Depois da escolha, o jogo explica o resultado. Cada resposta correta vale **100 pontos de confiança**; ao final são exibidos os acertos entre os oito casos e o total de pontos. A opção de reiniciar permite jogar novamente.
 
 ## Executar
-1. Instale Python 3.
-2. No terminal, execute `python -m pip install -r requirements.txt`.
-3. Execute `python main.py`.
+
+É necessário ter o Python 3 instalado e um ambiente com suporte a janelas gráficas.
+
+```bash
+python -m pip install -r requirements.txt
+python main.py
+```
 
 ## Controles
-- A: compartilhar
-- S: investigar
-- D: nao compartilhar
-- Enter: avancar
-- Esc: sair
 
-## Game loop
-O jogo processa eventos de teclado e mouse (input), atualiza a decisao e a pontuacao (update) e redesenha as telas (draw).
+| Tecla | Ação |
+| --- | --- |
+| `A` | Compartilhar |
+| `S` | Investigar |
+| `D` | Não compartilhar |
+| `Enter` | Iniciar, continuar ou reiniciar |
+| `Esc` | Sair (na tela de decisão, encerra o plantão) |
+| Mouse | Clicar nos botões |
 
-## Impacto social
-A proposta trabalha o combate a desinformacao, incentivando o jogador a observar autoria, data, contexto e confirmacao antes de repassar conteudos.
+## Implementação e game loop
+
+O projeto usa Pygame para desenhar as telas e ler eventos de teclado e mouse. Cada tela segue o ciclo **input → update → draw**:
+
+1. **Input:** captura eventos (teclado, mouse e fechamento da janela).
+2. **Update:** interpreta a ação, define a decisão ou avança de tela e atualiza o resultado/pontuação.
+3. **Draw:** desenha a interface e atualiza a janela.
+
+O arquivo `main.py` contém as funções `intro()` (abertura), `play_case()` (análise de cada mensagem), `feedback()` (explicação do resultado), `ending()` (balanço final) e `main()` (sequência dos oito casos). Essa divisão mantém a apresentação e o código simples.
 
 ## Integrantes
-Charlen Rogrigues da Silva
-RA: 326137850
 
-Cristiano Coelho Fonseca Junker
-RA: 32617935
+- Charlen Rogrigues da Silva — RA: 326137850
+- Cristiano Coelho Fonseca Junker — RA: 32617935
+- Gustavo Barboza Lage — RA: 326128126
+- João Pedro Cassiano dos Santos — RA: 324127678
 
-Gustavo Barboza Lage 
-RA: 326128126
+## Uso de inteligência artificial
 
-João Pedro Cassiano dos Santos
-RA: 324127678
+Em **09/11/2026**, o **ChatGPT (OpenAI)** foi utilizado como ferramenta de apoio para analisar os requisitos da atividade, revisar a organização do *game loop*, propor/aplicar ajustes de layout e legibilidade e aprimorar esta documentação. As alterações devem ser conferidas e validadas pelos integrantes antes da apresentação.
 
-## Uso de IA
-Preencher.
+Esta declaração descreve **essa etapa de revisão**. Ela não atribui a criação original do jogo à IA nem afirma que não houve uso de outras ferramentas em etapas anteriores. Se houve utilização anterior de IA, os integrantes devem complementar este registro com as informações correspondentes.
