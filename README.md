@@ -55,9 +55,7 @@ O arquivo `main.py` contém as funções `intro()` (abertura), `play_case()` (an
 
 ## Uso de inteligência artificial
 
-### Apoio à concepção e ao desenvolvimento inicial do projeto
-
-Em 08/11/2026, o ChatGPT (OpenAI) foi utilizado como ferramenta de apoio à concepção e ao desenvolvimento inicial do Plantão Zero. Sua utilização envolveu a análise dos requisitos da atividade, a definição da proposta do jogo com foco no combate à desinformação, a estruturação das mecânicas e a elaboração inicial do código em Python com a biblioteca PyGame.
+Em 11/08/2026, o ChatGPT (OpenAI) foi utilizado como ferramenta de apoio à concepção e ao desenvolvimento inicial do Plantão Zero. Sua utilização envolveu a análise dos requisitos da atividade, a definição da proposta do jogo com foco no combate à desinformação, a estruturação das mecânicas e a elaboração inicial do código em Python com a biblioteca PyGame.
 
 A ferramenta também auxiliou na organização dos arquivos do projeto, na elaboração do README, na divisão sugerida das responsabilidades entre os integrantes e na preparação do roteiro de apresentação e demonstração.
 
